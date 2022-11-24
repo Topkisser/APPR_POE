@@ -1,0 +1,40 @@
+using NUnit.Framework;
+
+namespace NGOTestproject
+{
+    public class Tests
+    {
+        [SetUp]
+        public void Setup()
+        {
+        }
+
+        [Test]
+        public void User_With_Correct_Username_And_Pass_Should_Login_Successfully()
+        {
+            // Arrange
+            var accountService = new AccountService();
+
+            // Act
+            bool result = accountService.DoLogin("test", "test");
+
+            // Assert
+            Assert.IsTrue(result);
+        }
+
+        public class AccountService : IAccountService
+        {
+            public bool DoLogin(string username, string password)
+            {
+                if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+                    return false;
+
+                return true;
+            }
+        }
+    }
+
+    public interface IAccountService
+    {
+    }
+}

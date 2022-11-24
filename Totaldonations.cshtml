@@ -1,0 +1,695 @@
+﻿@page
+@model APPR_POE_PART1.Pages.TotaldonationsModel
+@{
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>APPR NGO</title>
+    <link rel="stylesheet" href="site.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Hero-->
+    <header class="hero">
+        <div class="container">
+            <a class="btn btn-danger btn-lg text-uppercase js-scroll-trigger"
+               href="#donation">Check Current Donations</a>
+        </div>
+    </header>
+    <!--end of Hero Image-->
+    <!--Project Section-->
+    <section class="proj-section bg-light py-5" id="project">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Diasters</h2>
+                <h3 class="section-subheading text-muted">
+                    Most Recents diasters around the world
+                </h3>
+            </div>
+            <div class="row">
+                <!---Project 1-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="project-item">
+                        <a class="project-link" data-toggle="modal"
+                           href="#projectModal1">
+                            <div class="project-hover">
+                                <div class="project-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="~/lib/Images/flood.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Flooding</div>
+                            <div class="project-caption-subheading text-muted">
+                                Durban
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- End of Project 1-->
+                <!---Project 2-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="project-item">
+                        <a class="project-link" data-toggle="modal"
+                           href="#projectModal2">
+                            <div class="project-hover">
+                                <div class="project-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="~/lib/Images/watershort.jpg" alt="" />
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Water Shortage</div>
+                            <div class="project-caption-subheading text-muted">Cape Town</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 2-->
+                <!--Project 3-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="project-item">
+                        <a class="project-link" data-toggle="modal" href="#projectModal3">
+                            <div class="project-hover">
+                                <div class="project-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="~/lib/Images/war.jpg" alt="">
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">War</div>
+                            <div class="project-caption-subheading text-muted">Ukraine</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 3-->
+                <!--Project4 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="project-item">
+                        <a class="project-link" data-toggle="modal" href="#projectModal3">
+                            <div class="project-hover">
+                                <div class="project-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="~/lib/Images/earthquake.jpg" alt="">
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Earthquake</div>
+                            <div class="project-caption-subheading text-muted">China</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 4-->
+                <!--Project5 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="project-item">
+                        <a class="project-link" data-toggle="modal" href="#projectModal3">
+                            <div class="project-hover">
+                                <div class="project-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="~/lib/Images/monkeypox.jpg" alt="">
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Monkey Pox</div>
+                            <div class="project-caption-subheading text-muted">USA</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 5-->
+                <!--Project6 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="project-item">
+                        <a class="project-link" data-toggle="modal" href="#projectModal3">
+                            <div class="project-hover">
+                                <div class="project-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="~/lib/Images/coughcough.jpg" alt="">
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Covid-19</div>
+                            <div class="project-caption-subheading text-muted">World</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 6-->
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--End of Project Section-->
+    <!--Donations Section-->
+    <section class="proj-section bg-light py-5" id="donation">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Donations</h2>
+                <h3 class="section-subheading text-muted">
+                    Current Donations available for disasters
+                </h3>
+            </div>
+            <div class="row">
+                <!---Project 1-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="donation-item">
+                        <a class="donation-link" data-toggle="modal"
+                           href="#projectModal1">
+                            <div class="donation-hover">
+                                <div class="donation-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="~/lib/Images/flood.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="donation-caption">
+                            <div class="donation-caption-heading">Flooding</div>
+                            <div class="donation-caption-subheading text-muted">
+                                Durban
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- End of Project 1-->
+                <!---Project 2-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="donation-item">
+                        <a class="donation-link" data-toggle="modal"
+                           href="#projectModal2">
+                            <div class="donation-hover">
+                                <div class="donation-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="~/lib/Images/watershort.jpg" alt="" />
+                        </a>
+                        <div class="donation-caption">
+                            <div class="donation-caption-heading">Water Shortage</div>
+                            <div class="donation-caption-subheading text-muted">Cape Town</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 2-->
+                <!--Project 3-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="donation-item">
+                        <a class="donation-link" data-toggle="modal" href="#projectModal3">
+                            <div class="donation-hover">
+                                <div class="donation-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="~/lib/Images/war.jpg" alt="">
+                        </a>
+                        <div class="donation-caption">
+                            <div class="donation-caption-heading">War</div>
+                            <div class="donation-caption-subheading text-muted">Ukraine</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 3-->
+                <!--Project4 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="donation-item">
+                        <a class="donation-link" data-toggle="modal" href="#projectModal3">
+                            <div class="donation-hover">
+                                <div class="donation-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="~/lib/Images/earthquake.jpg" alt="">
+                        </a>
+                        <div class="donation-caption">
+                            <div class="donation-caption-heading">Earthquake</div>
+                            <div class="donation-caption-subheading text-muted">China</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 4-->
+                <!--Project5 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="donation-item">
+                        <a class="donation-link" data-toggle="modal" href="#projectModal3">
+                            <div class="donation-hover">
+                                <div class="donation-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="~/lib/Images/monkeypox.jpg" alt="">
+                        </a>
+                        <div class="donation-caption">
+                            <div class="donation-caption-heading">Monkey Pox</div>
+                            <div class="donation-caption-subheading text-muted">USA</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 5-->
+                <!--Project6 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="donation-item">
+                        <a class="donation-link" data-toggle="modal" href="#projectModal3">
+                            <div class="donation-hover">
+                                <div class="donation-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="~/lib/Images/coughcough.jpg" alt="">
+                        </a>
+                        <div class="donation-caption">
+                            <div class="donation-caption-heading">Covid-19</div>
+                            <div class="donation-caption-subheading text-muted">World</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 6-->
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--End of Donations Section-->
+    <!-- Donations Modals-->
+    <!-- Modal 1-->
+    <div class="donation-modal modal fade"
+         id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Project Flood aid Donations</h2>
+                                <p class="item-intro text-muted">
+                                    Total money donated: R 16 500
+                                </p>
+                                <p class="item-intro text-muted">
+                                    Total goods donated: 5 781 Kg
+                                </p>
+                                <img class="img-fluid d-block mx-auto" src="~/lib/Images/porj1.jpg" alt="" />
+                                <p>
+                                    The donations received will be used for the families and businesses struck by the tragedy of water flooding.
+                                    It will help those who lost their homes and businesses. Thank you for the donations
+                                </p>
+                                <ul class="list-inline">
+                                    <li>Date: November 2022</li>
+                                    <li>Goal: 72%</li>
+                                </ul>
+                                <button class="btn btn-danger"
+                                        data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>Close Donations
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="donation-modal modal fade"
+         id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Water shortage aid</h2>
+                                <p class="item-intro text-muted">
+                                    Total money donated: R 17 200
+                                </p>
+                                <p class="item-intro text-muted">
+                                    Total goods donated: 7 520 Kg
+                                </p>
+                                <img src="~/lib/Images/porj2.jpg" class="img-fluid d-block mx-auto" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: November 2022</li>
+                                    <li>Goal: 66%</li>
+                                </ul>
+                                <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>Close Donations
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3-->
+    <div class="donation-modal modal fade" id="projectModal3"
+         tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Project War aid</h2>
+                                <p class="item-intro text-muted">
+                                    Total money donated: R 21 746
+                                </p>
+                                <p class="item-intro text-muted">
+                                    Total goods donated: 2 665 Kg
+                                </p>
+                                <img src="~/lib/Images/porj3.jpg" class="img-fluid d-block mx-auto" alt="" />
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa
+                                    incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                </p>
+                                <ul class="list-inline">
+                                    <li>Date: November 2022</li>
+                                    <li>Goal: 88%</li>
+                                </ul>
+                                <button class="btn btn-danger" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Donations</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 4-->
+    <div class="donation-modal modal fade"
+         id="projectModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Project Earthquake aid</h2>
+                                <p class="item-intro text-muted">
+                                    Total money donated: R 35 954
+                                </p>
+                                <p class="item-intro text-muted">
+                                    Total goods donated: 5 854 Kg
+                                </p>
+                                <img src="~/lib/Images/earthquake.jpg" class="img-fluid d-block mx-auto" alt="" />
+                                <p>
+
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem
+                                    culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita
+                                    beatae cupiditate, maiores repudiandae, nostrum,
+                                    reiciendis facere nemo!
+                                </p>
+                                <ul class="list-inline">
+                                    <li>Date: November 2022</li>
+                                    <li>Goal: 74%</li>
+                                </ul>
+                                <button class="btn btn-danger" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Donations</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 5-->
+    <div class="donation-modal modal fade" id="projectModal5"
+         tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Project Mokey Pox</h2>
+                                <p class="item-intro text-muted">
+                                    Total money donated: R 74 654
+                                </p>
+                                <p class="item-intro text-muted">
+                                    Total goods donated: 7 963 Kg
+                                </p>
+                                <img src="~/lib/Images/porj5.jpg" class="img-fluid d-block mx-auto" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: November 2022</li>
+                                    <li>Goal: 92%</li>
+                                </ul>
+                                <button class="btn btn-danger" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Donations</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 6-->
+    <!-- Project Modals-->
+    <!-- Modal 1-->
+    <div class="project-modal modal fade"
+         id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Project Flood aid</h2>
+                                <p class="item-intro text-muted">
+                                    Help and aid flood affected areas
+                                </p>
+                                <img class="img-fluid d-block mx-auto" src="~/lib/Images/porj1.jpg" alt="" />
+                                <p>
+                                    Lorem ipsum dolor sit
+                                    amet, consectetur adipisicing elit. Est blanditiis dolorem
+                                    culpa incidunt minus dignissimos deserunt repellat aperiam
+                                    quasi sunt officia expedita beatae cupiditate, maiores
+                                    repudiandae, nostrum, reiciendis facere nemo!
+                                </p>
+                                <ul class="list-inline">
+                                    <li>Date: August 2022</li>
+                                    <li>Category: Water</li>
+                                </ul>
+                                <button class="btn btn-danger"
+                                        data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="project-modal modal fade"
+         id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Water shortage aid</h2>
+                                <p class="item-intro text-muted">
+                                    Provide drinkable water for those affected
+                                </p>
+                                <img src="~/lib/Images/porj2.jpg" class="img-fluid d-block mx-auto" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: August 2022</li>
+                                    <li>Category:Drinkable Water</li>
+                                </ul>
+                                <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3-->
+    <div class="project-modal modal fade" id="projectModal3"
+         tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Project War aid</h2>
+                                <p class="item-intro text-muted">Help those coming from Ukraine affected by the war</p>
+                                <img src="~/lib/Images/porj3.jpg" class="img-fluid d-block mx-auto" alt="" />
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa
+                                    incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                </p>
+                                <ul class="list-inline">
+                                    <li>Date: August 2022</li>
+                                    <li>Category: WAR</li>
+                                </ul>
+                                <button class="btn btn-danger" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 4-->
+    <div class="project-modal modal fade"
+         id="projectModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Project Earthquake aid</h2>
+                                <p class="item-intro text-muted">Help those affected by the earthquake</p>
+                                <img src="~/lib/Images/earthquake.jpg" class="img-fluid d-block mx-auto" alt="" />
+                                <p>
+
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem
+                                    culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita
+                                    beatae cupiditate, maiores repudiandae, nostrum,
+                                    reiciendis facere nemo!
+                                </p>
+                                <ul class="list-inline">
+                                    <li>Date: August 2020</li>
+                                    <li>Category: Earthquake</li>
+                                </ul>
+                                <button class="btn btn-danger" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 5-->
+    <div class="project-modal modal fade" id="projectModal5"
+         tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Project Mokey Pox</h2>
+                                <p class="item-intro text-muted">Help those affected by the virus</p>
+                                <img src="~/lib/Images/porj5.jpg" class="img-fluid d-block mx-auto" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: August 2022</li>
+                                    <li>Category: Virus</li>
+                                </ul>
+                                <button class="btn btn-danger" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 6-->
+    <!-- ======= Footer ======= -->
+    <footer class="mt-5" id="footer">
+        <div class="container d-md-flex py-4">
+            <div class="mr-md-auto text-center text-md-left">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>HB Rescuers</span></strong>. All Rights Reserved
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <ul class="social">
+                    <li class="list-item">
+                        <a class="list-link" href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-link" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-link" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-link" href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
